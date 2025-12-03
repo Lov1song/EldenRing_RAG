@@ -1,0 +1,23 @@
+# 数据文件夹（如果data里有大文件，过滤；如果是小配置文件，可删除这行）
+/data/
+# 模型文件夹（all-MiniLM-L6-v2模型体积较大，不建议上传）
+/models/
+# Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# 虚拟环境
+venv/
+env/
+# 临时文件
+*.tmp
+*.log
+# IDE配置文件（比如VS Code、PyCharm）
+.idea/
+.vscode/
+*.swp
+*.swo
+# 操作系统临时文件
+.DS_Store
+Thumbs.db

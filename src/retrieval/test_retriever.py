@@ -5,8 +5,8 @@ from retriever import Retriever
 if __name__ == "__main__":
     retriever = Retriever(
         model_path="./models/all-MiniLM-L6-v2",
-        faiss_path="./data_clean/margit_index.faiss",
-        chunks_path="./data_clean/margit_chunks.json",
+        faiss_path="./data/data_processed/eldenring_index.faiss",
+        chunks_path="./data/data_processed/eldenring_chunks.json",
         top_k=5
     )
     print("==== Elden Ring RAG 检索 ====")
