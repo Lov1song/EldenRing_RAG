@@ -11,9 +11,10 @@ if __name__ == "__main__":
     )
     print("==== Elden Ring RAG 检索 ====")
     # while True:
-    q = input("\n输入问题： ")
-    if q.strip() == "":
-        exit()
+    # q = input("\n输入问题： ")
+    # if q.strip() == "":
+    #     exit()
+    q = "谁是满月女王"
     results = retriever.search(q)
     print("\n===== 检索结果 =====")
     for i, (idx, text, dist) in enumerate(results):

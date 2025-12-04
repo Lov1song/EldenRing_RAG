@@ -8,16 +8,16 @@ from rag_qa import RAG_QA
 if __name__ == "__main__":
     retriever = Retriever(
         model_path="./models/all-MiniLM-L6-v2",
-        faiss_path="./data_clean/margit_index.faiss",
-        chunks_path="./data_clean/margit_chunks.json",
-        top_k=5
+        faiss_path="./data/data_processed/eldenring_index.faiss",
+        chunks_path="./data/data_processed/eldenring_chunks.json",
+        top_k=3
     )
 
     llm = OllamaClient(model_name="qwen:4b")
 
     rag = RAG_QA(retriever,llm)
 
-    q = "who is margit"
+    q = "如何击败Boss碎星拉塔恩"
 
     ans = rag.answer(q)
 
